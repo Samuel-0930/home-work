@@ -1,7 +1,13 @@
+body {
+	display: flex;
+	justify-content: center;
+}
+
 .section-01 {
 	position: relative;
 	width: 502px;
 	height: 310px;
+	border: 1px solid #aaa;
 }
 
 .logo-01 {
@@ -12,10 +18,8 @@
 
 .text-01 {
 	position: absolute;
-	background: yellow;
-	margin: 0;
 	text-align: center;
-	vertical-align: middle;
+	margin: 0;
 	width: 200px;
 	height: 37px;
 	line-height: 37px;
@@ -27,4 +31,14 @@
 	position: absolute;
 	left: 252px;
 	top: 20px;
+}
+
+.button-01 {
+	position: absolute;
+	width: 42px;
+	height: 42px;
+	background-image: url(./images/button1.svg);
+	left: 20px;
+	bottom: 20px;
+	border: 0;
 }
