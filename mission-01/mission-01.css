@@ -1,0 +1,30 @@
+.section-01 {
+	position: relative;
+	width: 502px;
+	height: 310px;
+}
+
+.logo-01 {
+	position: absolute;
+	left: 73px;
+	top: 75px;
+}
+
+.text-01 {
+	position: absolute;
+	background: yellow;
+	margin: 0;
+	text-align: center;
+	vertical-align: middle;
+	width: 200px;
+	height: 37px;
+	line-height: 37px;
+	left: 28px;
+	top: 155px;
+}
+
+.product-01 {
+	position: absolute;
+	left: 252px;
+	top: 20px;
+}
