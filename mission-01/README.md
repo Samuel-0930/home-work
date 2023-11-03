@@ -18,6 +18,8 @@
 - **이 때, section-02의 button은 > 요소를 추가해야 하기 때문에 하위 항목으로 img태그를 포함시킨다.**
 - **section-02와 section-03은 flex 속성을 이용해 배치할 예정이니 div태그로 감싸준다.**
   <br>
+[이름 없는 노트북 2.pdf](https://github.com/Samuel-0930/home-work/files/13252516/2.pdf)
+  <br>
 
 2. **CSS 스타일링 작업**
 
