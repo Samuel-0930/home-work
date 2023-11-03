@@ -1,6 +1,7 @@
 body {
 	display: flex;
-	justify-content: center;
+	flex-flow: column nowrap;
+	align-items: center;
 }
 
 .section-01 {
@@ -18,13 +19,13 @@ body {
 
 .text-01 {
 	position: absolute;
-	text-align: center;
-	margin: 0;
 	width: 200px;
 	height: 37px;
-	line-height: 37px;
 	left: 28px;
 	top: 155px;
+	margin: 0;
+	text-align: center;
+	line-height: 37px;
 }
 
 .product-01 {
@@ -34,6 +35,91 @@ body {
 }
 
 .button-01 {
+	position: absolute;
+	width: 42px;
+	height: 42px;
+	background-image: url(./images/button1.svg);
+	left: 20px;
+	bottom: 20px;
+	border: 0;
+}
+
+.container {
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 10px;
+}
+
+.section-02,
+.section-03 {
+	position: relative;
+	width: 243px;
+	height: 310px;
+	border: 1px solid #aaa;
+	margin: 0 7px;
+}
+
+.logo-02 {
+	position: absolute;
+	left: 64px;
+	top: 14px;
+}
+
+.text-02 {
+	position: absolute;
+	width: 200px;
+	height: 27px;
+	left: 21px;
+	top: 66px;
+	margin: 0;
+	text-align: center;
+	flex-shrink: 0;
+}
+
+.product-02 {
+	position: absolute;
+	left: 23px;
+	top: 100px;
+}
+
+.button-02 {
+	position: absolute;
+	display: inline-flex;
+	padding: 12px 18px 13px 20px;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	left: 20px;
+	bottom: 20px;
+	background: var(--blue-600, #0074e9);
+	border: 0;
+	color: white;
+}
+
+.logo-03 {
+	position: absolute;
+	left: 64px;
+	top: 14px;
+}
+
+.text-03 {
+	position: absolute;
+	width: 200px;
+	height: 27px;
+	left: 21px;
+	top: 66px;
+	margin: 0;
+	text-align: center;
+	flex-shrink: 0;
+}
+
+.product-03 {
+	position: absolute;
+	left: 23px;
+	top: 100px;
+}
+
+.button-03 {
 	position: absolute;
 	width: 42px;
 	height: 42px;
