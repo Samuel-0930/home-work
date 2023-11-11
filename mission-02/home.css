@@ -1,0 +1,223 @@
+/* 배경 이미지 세팅 */
+.bg {
+	align-items: center;
+	height: 100vh;
+	background: url(./images/커피\ 이미지.png) no-repeat center;
+	background-size: cover;
+
+	& .bg-black {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.2);
+	}
+}
+
+/* Welcome 문구 작성 */
+.welcome {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	color: #fefefe;
+
+	& .welcome-title {
+		margin: 0;
+		padding: 0;
+		font-size: 36px;
+		line-height: 36px;
+		font-weight: 100;
+	}
+
+	& .welcome-en {
+		margin-top: 24px;
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	& .welcome-ko {
+		font-size: 12px;
+		font-weight: 400;
+	}
+}
+
+/* 로그인 폼 */
+.login {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100px;
+
+	& label {
+		display: none;
+	}
+
+	& .user-type {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+
+		& .fa-solid {
+			display: none;
+		}
+
+		& .user-email.is-valid {
+			position: relative;
+
+			& .fa-check {
+				display: block;
+				font-size: 12px;
+				position: absolute;
+				right: 10px;
+				bottom: 30px;
+				padding: 3px;
+				border-radius: 50%;
+				background: #fefefe;
+				color: darkblue;
+			}
+		}
+
+		& .user-email.is-invalid {
+			position: relative;
+
+			& .fa-triangle-exclamation {
+				display: block;
+				font-size: 20px;
+				position: absolute;
+				right: 6px;
+				bottom: 25px;
+				padding: 3px;
+				border-radius: 50%;
+				color: #fefefe;
+			}
+		}
+
+		& .user-password.is-valid {
+			position: relative;
+
+			& .fa-check {
+				display: block;
+				font-size: 12px;
+				position: absolute;
+				right: 10px;
+				bottom: 30px;
+				padding: 3px;
+				border-radius: 50%;
+				background: #fefefe;
+				color: darkblue;
+			}
+		}
+
+		& .user-password.is-invalid {
+			position: relative;
+
+			& .fa-triangle-exclamation {
+				display: block;
+				font-size: 20px;
+				position: absolute;
+				right: 6px;
+				bottom: 25px;
+				padding: 3px;
+				border-radius: 50%;
+				color: #fefefe;
+			}
+		}
+
+		& .user-password.is-invisible {
+			position: relative;
+
+			& .fa-eye-slash {
+				display: block;
+				font-size: 18px;
+				position: absolute;
+				right: 32px;
+				bottom: 26px;
+				padding: 3px;
+				border-radius: 50%;
+				color: #fefefe;
+			}
+		}
+
+		& .user-password.is-visible {
+			position: relative;
+
+			& .fa-eye {
+				display: block;
+				font-size: 18px;
+				position: absolute;
+				right: 32px;
+				bottom: 26px;
+				padding: 3px;
+				border-radius: 50%;
+				color: #fefefe;
+			}
+		}
+
+		& input {
+			width: 540px;
+			height: 50px;
+			margin: 20px 0;
+			background: transparent;
+			border: none;
+			border-bottom: 1px solid white;
+			color: white;
+			font-size: 20px;
+		}
+
+		& input::placeholder {
+			color: white;
+			font-weight: 100;
+			text-indent: 10px;
+		}
+
+		& .remember {
+			width: 100%;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: left;
+			align-items: center;
+
+			& .remember-button {
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				margin: 0;
+				margin-right: 5px;
+			}
+		}
+	}
+
+	& .login-btn {
+		margin-top: 50px;
+		width: 100%;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+
+		& .signIn-btn {
+			width: 260px;
+			height: 48px;
+			color: #24388d;
+			font-size: 20px;
+			font-weight: 700;
+			border-radius: 10px;
+		}
+
+		& .signUp-btn {
+			text-align: center;
+			width: 260px;
+			height: 48px;
+			line-height: 48px;
+			border: 1px solid white;
+			text-decoration: none;
+			color: white;
+			font-size: 20px;
+			font-weight: 700;
+			border-radius: 10px;
+		}
+	}
+}

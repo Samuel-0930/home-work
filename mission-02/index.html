@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>EDIYA COFFEE</title>
+		<link
+			rel="icon"
+			href="./favicon.svg"
+			type="image/x-icon" />
+		<link
+			href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/static/woff2/SUIT.css"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="style.css" />
+		<script
+			src="https://kit.fontawesome.com/d2d156b327.js"
+			crossorigin="anonymous"
+			defer></script>
+	</head>
+	<body>
+		<!-- background img -->
+		<div class="bg">
+			<div class="bg-black">
+				<!-- 웰컴 문구 -->
+				<div class="welcome">
+					<h1 class="welcome-title">로그인</h1>
+					<span class="welcome-en">Welcome, Ediya Coffee</span>
+					<span class="welcome-ko">이디야커피에 오신 것을 환영합니다.</span>
+					<form
+						action="/"
+						method="get"
+						class="login">
+						<div class="user-type">
+							<label for="login-email">ID</label>
+							<div class="user-email is-valid">
+								<input
+									type="email"
+									name="login-email"
+									id="login-email"
+									placeholder="이메일"
+									required />
+								<i class="fa-solid fa-check"></i>
+								<i class="fa-solid fa-triangle-exclamation"></i>
+							</div>
+							<label for="login-password">PASSWORD</label>
+							<div class="user-password is-invalid is-invisible">
+								<input
+									type="password"
+									name="login-password"
+									id="login-password"
+									placeholder="패스워드"
+									required />
+								<i class="fa-solid fa-check"></i>
+								<i class="fa-solid fa-triangle-exclamation"></i>
+								<i class="fa-solid fa-eye-slash"></i>
+								<i class="fa-solid fa-eye"></i>
+							</div>
+							<div class="remember">
+								<input class="remember-button" type="checkbox"></input>
+								<span>이메일 저장</span>
+							</div> 
+						</div>
+						<div class="login-btn">
+							<input
+								type="submit"
+								value="로그인"
+								class="signIn-btn" />
+							<a
+								href="/"
+								class="signUp-btn"
+								>회원가입</a
+							>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
