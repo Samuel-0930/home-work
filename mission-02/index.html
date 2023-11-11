@@ -35,24 +35,22 @@
 						method="get"
 						class="login">
 						<div class="user-type">
-							<label for="login-email">ID</label>
-							<div class="user-email is-valid">
+							<div class="user-email is-valid ">
+								<label for="login-email" class="is-focus">이메일</label>
 								<input
 									type="email"
 									name="login-email"
 									id="login-email"
-									placeholder="이메일"
 									required />
 								<i class="fa-solid fa-check"></i>
 								<i class="fa-solid fa-triangle-exclamation"></i>
 							</div>
-							<label for="login-password">PASSWORD</label>
-							<div class="user-password is-invalid is-invisible">
+							<div class="user-password is-invalid is-visible">
+								<label for="login-password" class="is-focus">패스워드</label>
 								<input
 									type="password"
 									name="login-password"
 									id="login-password"
-									placeholder="패스워드"
 									required />
 								<i class="fa-solid fa-check"></i>
 								<i class="fa-solid fa-triangle-exclamation"></i>

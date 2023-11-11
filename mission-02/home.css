@@ -51,9 +51,9 @@
 	align-items: center;
 	margin-top: 100px;
 
-	& label {
+	/* & label {
 		display: none;
-	}
+	} */
 
 	& .user-type {
 		display: flex;
@@ -63,6 +63,23 @@
 
 		& .fa-solid {
 			display: none;
+		}
+
+		& .user-email {
+			position: relative;
+
+			& label {
+				position: absolute;
+				font-size: 20px;
+				left: 5px;
+				top: 45px;
+				transition: all 400ms ease;
+			}
+
+			& .is-focus {
+				font-size: 14px;
+				top: 20px;
+			}
 		}
 
 		& .user-email.is-valid {
@@ -93,6 +110,23 @@
 				padding: 3px;
 				border-radius: 50%;
 				color: #fefefe;
+			}
+		}
+
+		& .user-password {
+			position: relative;
+
+			& label {
+				position: absolute;
+				font-size: 20px;
+				left: 5px;
+				top: 45px;
+				transition: all 400ms ease;
+			}
+
+			& .is-focus {
+				font-size: 14px;
+				top: 20px;
 			}
 		}
 
@@ -145,6 +179,10 @@
 		& .user-password.is-visible {
 			position: relative;
 
+			& input {
+				input-security: none;
+			}
+
 			& .fa-eye {
 				display: block;
 				font-size: 18px;
@@ -159,7 +197,7 @@
 
 		& input {
 			width: 540px;
-			height: 50px;
+			height: 75px;
 			margin: 20px 0;
 			background: transparent;
 			border: none;
@@ -219,5 +257,20 @@
 			font-weight: 700;
 			border-radius: 10px;
 		}
+	}
+}
+
+input {
+	animation: smoothUp 600ms ease both;
+}
+
+@keyframes smoothUp {
+	0% {
+		font-size: 20px;
+	}
+
+	100% {
+		font-size: 18px;
+		text-transform: translate(-20px, -20px);
 	}
 }

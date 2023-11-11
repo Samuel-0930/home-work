@@ -1,0 +1,9 @@
+@keyframes smoothUp {
+	0% {
+		font-size: 20px;
+	}
+
+	100% {
+		font-size: 10px;
+	}
+}
