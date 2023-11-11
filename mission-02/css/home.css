@@ -2,7 +2,7 @@
 .bg {
 	align-items: center;
 	height: 100vh;
-	background: url(./images/커피\ 이미지.png) no-repeat center;
+	background: url(./../images/커피\ 이미지.png) no-repeat center;
 	background-size: cover;
 
 	& .bg-black {
