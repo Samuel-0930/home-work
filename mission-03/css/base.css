@@ -1,8 +1,6 @@
 :root {
-	--primary-color: white;
-	--second-color: #757575;
-	--accent-color: #e50914;
-
-	--text-regular: 400;
-	--text-bold: 700;
+	--red-500: #e50914;
+	--red-600: #b70710;
+	--green-400: #58e590;
+	--gray-500: #757575;
 }

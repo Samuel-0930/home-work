@@ -1,0 +1,54 @@
+.component-container {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	row-gap: 10px;
+}
+
+.button {
+	transition: all 100ms ease;
+	cursor: pointer;
+	border: 0;
+	font-weight: 700;
+	background: var(--red-500);
+	color: white;
+}
+
+.button-rounded {
+	padding: 0.75em 1em;
+	width: 4.375em;
+	height: 2.5em;
+	letter-spacing: -0.008px;
+	border-radius: 4px;
+}
+
+.button:hover {
+	background: var(--red-600);
+	transform: scale(1.02);
+}
+
+.button:focus {
+	border: 3px solid var(--green-400);
+	background: var(--red-500);
+}
+
+.button-normal-container {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.button.is--disabled {
+	background: var(--gray-500);
+}
+
+.button-normal {
+	padding: 0.9375em 1.25em;
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+}
