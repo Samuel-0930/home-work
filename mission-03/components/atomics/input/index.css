@@ -6,3 +6,61 @@
 	padding: 10px;
 	row-gap: 10px;
 }
+
+.input-form {
+	position: relative;
+	display: block;
+}
+
+.input-email {
+	background-color: var(--gray-800);
+	border: 0;
+	width: 33.75em;
+	height: 3.75em;
+	color: white;
+	padding-top: 1em;
+	padding-left: 1.25em;
+}
+
+/* when email is invalid */
+.input-email.is--invalid {
+	border-bottom: 3px solid var(--red-500);
+}
+.input-email.is--invalid ~ .email-error-message {
+	display: block;
+}
+
+/* when email is focused */
+.input-email:focus + .input-email-label {
+	display: flex;
+	left: 19px;
+	top: 10px;
+	flex-shrink: 0;
+	color: var(--red-500);
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: -0.006px;
+}
+
+.input-email-label {
+	position: absolute;
+	width: 31.25em;
+	left: 1.25em;
+	top: 1.125em;
+	color: var(--gray-300, #acacac);
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: -0.008px;
+	transition: all 100ms ease;
+}
+
+.email-error-message {
+	display: none;
+	position: absolute;
+	left: 1.25em;
+	bottom: -2em;
+	color: var(--red-500);
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: -0.007px;
+}

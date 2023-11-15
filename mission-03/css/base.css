@@ -2,5 +2,12 @@
 	--red-500: #e50914;
 	--red-600: #b70710;
 	--green-400: #58e590;
+	--gray-300: #acacac;
 	--gray-500: #757575;
+	--gray-800: #2f2f2f;
+}
+
+body {
+	background-color: black;
+	color: white;
 }
