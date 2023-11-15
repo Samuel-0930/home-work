@@ -22,16 +22,35 @@
 				action="/"
 				method="get"
 				class="input-form">
-				<input
-					type="email"
-					class="input-email"
-					id="input-email" />
-				<label
-					for="input-email"
-					class="input-email-label"
-					>레이블</label
-				>
-				<span class="email-error-message">오류 메세지를 출력합니다.</span>
+				<!-- email -->
+				<div class="email-container">
+					<input
+						type="email"
+						class="input-email"
+						id="input-email" />
+					<label
+						for="input-email"
+						class="input-email-label"
+						>레이블</label
+					>
+					<span class="email-error-message">오류 메세지를 출력합니다.</span>
+				</div>
+
+				<!-- password -->
+				<div class="password-container">
+					<input
+						type="password"
+						class="input-password"
+						id="input-password" />
+					<label
+						for="input-password"
+						class="input-password-label"
+						>비밀번호</label
+					>
+					<span class="password-error-message"
+						>비밀번호는 영문, 숫자 조합 4 - 60자 사이 값을 입력합니다.</span
+					>
+				</div>
 			</form>
 		</div>
 	</body>

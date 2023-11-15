@@ -8,8 +8,19 @@
 }
 
 .input-form {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	row-gap: 10px;
+}
+
+.email-container {
 	position: relative;
-	display: block;
+}
+
+.password-container {
+	position: relative;
 }
 
 .input-email {
@@ -28,6 +39,19 @@
 }
 .input-email.is--invalid ~ .email-error-message {
 	display: block;
+}
+
+/* if there are texts in input box, hold label */
+.input-email.is--valid ~ .input-email-label,
+.input-email.is--invalid ~ .input-email-label {
+	display: flex;
+	left: 19px;
+	top: 10px;
+	flex-shrink: 0;
+	color: var(--red-500);
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: -0.006px;
 }
 
 /* when email is focused */
@@ -55,6 +79,72 @@
 }
 
 .email-error-message {
+	display: none;
+	position: absolute;
+	left: 1.25em;
+	bottom: -2em;
+	color: var(--red-500);
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: -0.007px;
+}
+
+.input-password {
+	background-color: var(--gray-800);
+	border: 0;
+	width: 33.75em;
+	height: 3.75em;
+	color: white;
+	padding-top: 1em;
+	padding-left: 1.25em;
+}
+
+/* when password is invalid */
+.input-password.is--invalid {
+	border-bottom: 3px solid var(--red-500);
+}
+.input-password.is--invalid ~ .password-error-message {
+	display: block;
+}
+
+/* if there are texts in input box, hold label */
+.input-password.is--valid ~ .input-password-label,
+.input-password.is--invalid ~ .input-password-label {
+	display: flex;
+	left: 19px;
+	top: 10px;
+	flex-shrink: 0;
+	color: var(--red-500);
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: -0.006px;
+}
+
+/* when password is focused */
+.input-password:focus + .input-password-label {
+	display: flex;
+	left: 19px;
+	top: 10px;
+	flex-shrink: 0;
+	color: var(--red-500);
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: -0.006px;
+}
+
+.input-password-label {
+	position: absolute;
+	width: 31.25em;
+	left: 1.25em;
+	top: 1.125em;
+	color: var(--gray-300, #acacac);
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: -0.008px;
+	transition: all 100ms ease;
+}
+
+.password-error-message {
 	display: none;
 	position: absolute;
 	left: 1.25em;
